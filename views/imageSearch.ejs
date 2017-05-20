@@ -1,0 +1,47 @@
+<!DOCTYPE>
+
+<html>
+    <head>
+        <title>Image Search</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../style.css" type="text/css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="text-center">Image Search</h1>
+
+            <a href="/imageSearch/latestSearch" target="__blank">Latest Searches</a>
+
+            <h3>User stories:</h3>
+            <ul>
+                <li>I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</li>
+                <li>I can paginate through the responses by adding a ?offset=2 parameter to the URL.</li>
+                <li>I can get a list of the most recently submitted search strings.</li>
+                <li>I can retrieve search results as JSON or Images rendered on the page</li>
+            </ul>
+
+            <form id="image-search" action="/imageSearch/searchImage" method="post" class="col-lg-4 col-md-6">
+                <div class="form-group-sm">
+                    <input type="text" name="term" class="form-control" required placeholder="Your Search Term...">
+                </div>
+                <div class="form-group-sm">
+                    <input type="number" name="offset" min="0" class="form-control" placeholder="Offset">
+                </div>
+
+                <label class="radio-inline">
+                <input type="radio" name="format" id="json" checked value="json"> JSON
+                </label>
+                <label class="radio-inline">
+                <input type="radio" name="format" id="images" value="images"> IMAGES
+                </label>
+
+                <br>
+                <button type="submit" class="btn btn-default">Search</button>
+
+            </form>
+            
+        
+        </div>
+    </body>
+</html>

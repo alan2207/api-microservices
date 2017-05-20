@@ -1,0 +1,95 @@
+<!DOCTYPE>
+
+<html>
+    <head>
+        <title>Index</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+
+        <div class="container">
+            <h1 class="text-center">API Microservices 5 in 1</h1>
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title text-center">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Timestamp Microservice
+                </a>
+            </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+                <p>Microservice that returns time both in unix and natural date.</p>
+                <a href="/timestamp" target="__blank">Timestamp</a>
+            </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title text-center">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Request Header Parser Microservice
+                </a>
+            </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+                <p>Microservice that returns info about users computer (IP, Operating System, Language)</p>
+                <a href="/whoami" target="__blank">Who Am I</a>
+            </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title text-center">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                URL Shortener Microservice
+                </a>
+            </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+                <p>Microservice that shortens given URL passed as argument to it's original form.</p>
+                <a href="/shortenURL" target="__blank">URL Shortener</a>
+            </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFour">
+            <h4 class="panel-title text-center">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Image Search Abstraction Layer Microservice
+                </a>
+            </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="panel-body">
+                <p>Microservice for searching images using Bing API. The user can choose format of the data, so the data can be presented either as JSON, or the search result can be rendered as images to a page.</p>
+                <a href="/imageSearch" target="__blank">Image Search</a>
+            </div>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFive">
+            <h4 class="panel-title text-center">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                File Metadata Microservice
+                </a>
+            </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+            <div class="panel-body">
+                <p>Microservice for getting the information about the given file.</p>
+                <a href="/getMeta" target="__blank">File Meta Microservice</a>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </body>
+</html>
